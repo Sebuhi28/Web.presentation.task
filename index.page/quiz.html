@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizomaniya - Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaMxtX6wY3Zg5o8XcGqFeDLVANzQxZ3OEl3BgldoEyl4H0zUF0QKbrJ0EcQFjfw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="quizstyle.css">
+</head>
+
+<body>
+
+    <div class="quiz-wrapper">
+
+        <div class="quiz-top-bar">
+            <a href="index.html" class="back-icon" style="font-size: 30px; cursor: pointer; text-decoration: none;">←</a>
+            <div class="quiz-title-center">
+                <h2 id="category-title">Loading...</h2>
+                <span id="total-q-count-header">...</span>
+            </div>
+            <div style="width: 24px;"></div>
+        </div>
+
+        <div class="quiz-card">
+            <div class="card-header">
+                <span class="q-indicator" id="q-indicator">Question: 1/10</span>
+            </div>
+
+            <h3 class="question-text" id="question-text">
+                Sual yüklənir...
+            </h3>
+
+            <div class="options-list" id="options-container">
+            </div>
+        </div>
+
+        <div class="quiz-footer">
+            <button class="nav-btn prev" id="prev-btn" onclick="prevQuestion()">Previous</button>
+            <button class="nav-btn next" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quizomaniya. All rights reserved.</p>
+    </footer>
+
+    <script src="quizscript.js"></script>
+</body>
+
+</html>

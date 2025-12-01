@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nəticə - Quizomaniya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="resultstyle.css">
+</head>
+<body>
+
+    <div class="quiz-box">
+        <div class="quiz-header">
+            <h1>Thanks for choosing Quizomaniya</h1>
+        </div>
+    </div>
+
+    <div class="quiz-wrapper">
+        <div class="result-card">
+            <div class="sticker-box">
+                <i id="result-icon" class="fa-solid fa-crown"></i>
+            </div>
+
+            <h2 id="result-title">Möhtəşəm!</h2>
+            
+            <div class="score-box">
+                Sizin nəticəniz: <span id="user-score">0</span> / <span id="total-score">10</span>
+            </div>
+
+            <p id="motivation-text" class="motivation-text">
+                Əla nəticədir, sən bu işin ustasısan!
+            </p>
+
+            <div class="result-buttons">
+                <button class="nav-btn next" onclick="goHome()">Home</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quizomaniya. All rights reserved.</p>
+    </footer>
+
+    <script src="quizscript.js"></script>
+</body>
+</html>

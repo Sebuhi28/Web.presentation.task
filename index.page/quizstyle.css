@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Şəkildəki kimi modern font */
+}
+
+body {
+    background-color: #f5f7fb; /* Çox açıq boz fon */
+    min-height: 100vh;
+}
+
+/* --- ANA SƏHİFƏ DİZAYNI --- */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2e7d32;
+}
+
+.cat-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: 5px solid #4CAF50;
+}
+
+.cat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+}
+
+.cat-info h3 { font-size: 18px; color: #333; }
+.cat-info span { font-size: 14px; color: #777; }
+.cat-icon { color: #4CAF50; font-size: 20px; }
+
+.hide { display: none; }
+
+.quiz-wrapper {
+    max-width: 500px; 
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+/* Üst Bar */
+.quiz-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.quiz-title-center {
+    text-align: center;
+}
+
+.quiz-title-center h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+#total-q-count-header {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Əsas Sual Kartı */
+.quiz-card {
+    background: white;
+    border-radius: 25px; /* Şəkildəki kimi yumru */
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Yumşaq kölgə */
+    flex-grow: 1; /* Ekranı doldurması üçün */
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.card-header {
+    margin-bottom: 15px;
+}
+
+.q-indicator {
+    color: #4CAF50; /* Yaşıl rəng */
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* Variantlar (Şəkildəki kimi ayrı-ayrı qutular) */
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-btn {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee; /* Çox nazik çərçivə */
+    padding: 18px 20px;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* Düymə kölgəsi */
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.option-btn:hover {
+    background-color: #f9fff9;
+    border-color: #4CAF50;
+}
+
+/* Düzgün və Səhv Cavab Rəngləri */
+.option-btn.correct {
+    background-color: #4CAF50 !important; /* Tünd Yaşıl */
+    color: white !important;
+    border-color: #4CAF50;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+.option-btn.wrong {
+    background-color: #ffebee !important; /* Açıq Qırmızı */
+    color: #d32f2f !important;
+    border-color: #d32f2f;
+}
+
+.option-btn.disabled {
+    pointer-events: none;
+}
+
+/* Aşağıdakı Düymələr */
+.quiz-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Sağ tərəfə çək */
+    gap: 15px;
+}
+
+.nav-btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-btn.prev {
+    background-color: transparent;
+    color: #777;
+    border: 1px solid transparent;
+}
+
+.nav-btn.prev:hover {
+    color: #333;
+}
+
+.nav-btn.next {
+    background-color: #1b5e20; /* Şəkildəki kimi tünd (amma yaşıl versiyası) */
+    color: white;
+    box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
+}
+
+.nav-btn.next:hover {
+    background-color: #2e7d32;
+}
+
+footer {
+    position: fixed;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

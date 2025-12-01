@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- RESULT PAGE STYLES --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Şəkildəki kimi modern font */
+}
+
+body {
+    background-color: #f5f7fb; /* Çox açıq boz fon */
+    min-height: 100vh;
+}
+
+.quiz-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.result-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto; /* Mərkəzə gətirmək üçün */
+    width: 100%;
+    margin-top: 80px;
+}
+
+.sticker-box {
+    margin-bottom: 20px;
+}
+
+/* Böyük İkon/Sticker */
+#result-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+    display: inline-block;
+    animation: popUp 0.5s ease-out;
+}
+
+/* Nəticəyə görə rənglər (JS ilə veriləcək) */
+.icon-win { color: #FFD700; filter: drop-shadow(0 5px 10px rgba(255, 215, 0, 0.4)); } /* Qızılı */
+.icon-mid { color: #4CAF50; filter: drop-shadow(0 5px 10px rgba(76, 175, 80, 0.4)); } /* Yaşıl */
+.icon-lose { color: #FF5722; filter: drop-shadow(0 5px 10px rgba(255, 87, 34, 0.4)); } /* Narıncı */
+
+#result-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.score-box {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.motivation-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+.nav-btn:hover {
+    background: #45a049;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Animasiya */
+@keyframes popUp {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}

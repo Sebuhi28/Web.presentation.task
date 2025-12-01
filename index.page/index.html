@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizomaniya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+
+<body>
+    <div class="quiz-box">
+        <div class="quiz-header">
+            <h1>Quizomaniya</h1>
+        </div>
+    </div>
+
+    
+
+    <div class="container" id="home-screen">
+
+        <div class="category-list">
+            <div class="cat-card" onclick="goToQuiz('general')">
+                <div class="cat-info">
+                    <h3>General Knowledge</h3>
+                    <span>10 questions</span>
+                </div>
+                <div class="cat-icon"><i class="fa-solid fa-play"></i></div>
+            </div>
+
+            <div class="cat-card" onclick="goToQuiz('science')">
+                <div class="cat-info">
+                    <h3>Science</h3>
+                    <span>15 questions</span>
+                </div>
+                <div class="cat-icon"><i class="fa-solid fa-flask"></i></div>
+            </div>
+
+            <div class="cat-card" onclick="goToQuiz('history')">
+                <div class="cat-info">
+                    <h3>History</h3>
+                    <span>8 questions</span>
+                </div>
+                <div class="cat-icon"><i class="fa-solid fa-landmark"></i></div>
+            </div>
+
+            <div class="cat-card" onclick="goToQuiz('sports')">
+                <div class="cat-info">
+                    <h3>Sports</h3>
+                    <span>12 questions</span>
+                </div>
+                <div class="cat-icon"><i class="fa-solid fa-futbol"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quizomaniya. All rights reserved.</p>
+    </footer>
+
+    <script src="quizscript.js"></script>
+</body>
+
+</html>
