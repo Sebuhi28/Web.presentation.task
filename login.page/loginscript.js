@@ -51,5 +51,5 @@ function login() {
     
     localStorage.setItem('currentUser', enteredUsername);
     
-    window.location.href = '../index.page/index.html'; 
+    window.location.href = '../index.html'; 
 }

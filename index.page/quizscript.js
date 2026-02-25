@@ -65,7 +65,7 @@ let score = 0; // Xal hesabı üçün
 document.addEventListener('DOMContentLoaded', () => {
     
     // 1. QUIZ SƏHİFƏSİ
-    if (window.location.pathname.includes('quiz.html')) {
+    if (window.location.pathname.includes('/index.page/quiz.html')) {
         const urlParams = new URLSearchParams(window.location.search);
         const selectedCat = urlParams.get('category');
 
@@ -78,14 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. RESULT SƏHİFƏSİ (Yeni Hissə)
-    if (window.location.pathname.includes('result.html')) {
+    if (window.location.pathname.includes('./index.page/result.html')) {
         showResults();
     }
 });
 
 // === INDEX SƏHİFƏSİ FUNKSİYASI ===
 function goToQuiz(category) {
-    window.location.href = `quiz.html?category=${category}`;
+    window.location.href = `./index.page/quiz.html?category=${category}`;
 }
 
 // === QUIZ SƏHİFƏSİ FUNKSİYALARI ===
@@ -221,5 +221,5 @@ function showResults() {
 }
 
 function goHome() {
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
