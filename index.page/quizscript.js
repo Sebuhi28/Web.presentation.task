@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. RESULT SƏHİFƏSİ (Yeni Hissə)
-    if (window.location.pathname.includes('./index.page/result.html')) {
+    if (window.location.pathname.includes('/index.page/result.html')) {
         showResults();
     }
 });
